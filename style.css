@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(167, 217, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card h4 {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#card {
+  height: 500px;
+  width: 350px;
+  background-color: #f8f4f4;
+  border-radius: 15px;
+  border: 3px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.stories {
+  height: 120px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #dadada;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/* we can remove x scroll bar using-- */
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  height: 90px;
+  width: 90px;
+  border: 3px solid rgb(179, 45, 45);
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#full-screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
